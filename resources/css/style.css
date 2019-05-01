@@ -6,3 +6,7 @@ nav {
 h1 {
   color: #3D5DFF;
 }
+
+.btn:hover {
+  box-shadow: 0 0 5px gray;
+}
