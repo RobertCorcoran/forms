@@ -30,6 +30,24 @@ if(isset($_GET['logout'])){ //Destroy session when user logs out
      <title>Welcome</title>
    </head>
    <body>
+     <nav class="navbar navbar-expand-lg  ">
+       <a class="navbar-brand" href="https://github.com/RobertCorcoran">Robert's Office</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav mr-auto">
+           <li class="nav-item active">
+             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#">About</a>
+           </li>
+         </ul>
+
+       </div>
+     </nav>
      <h1>Gotcha!</h1>
 
     <?php //Will only show the folling html if the login is a success
@@ -51,8 +69,10 @@ if(isset($_GET['logout'])){ //Destroy session when user logs out
     <?php //If user logs in then print info about him
       if(isset($_SESSION['email'])) : ?>
       <h3>Welcome <?php echo $_SESSION['email']; ?></h3>
+      <div class="container">
+        <button type="button" class="tbn btn-primary" ><a href="main.php?logout='1'">Log Out</a></button>
+      </div>
 
-      <button type="button" ><a href="main.php?logout='1'"></a></button>
 
     <?php endif ?>
 
