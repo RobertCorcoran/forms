@@ -14,20 +14,6 @@ h1 {
   box-shadow: 0 0 5px gray;
 }
 
-/*
-a {
-  color: white !important;
-}
-*/
-
-
 #bootstrap-overrides {
   color: white;
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
-  html {
-    font-size: 1.25rem;
-  }
 }
