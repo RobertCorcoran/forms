@@ -28,6 +28,6 @@ a {
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
   html {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
